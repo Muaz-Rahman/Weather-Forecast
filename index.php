@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Weatherly</title>
+    <title>Weatherly</title>
     <meta name="description" content="Free and reliable weather information for you!">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
@@ -19,6 +19,8 @@ if (!isset($_POST["city"])) {
     $url = "https://api.openweathermap.org/data/2.5/weather?lat=23.77&lon=90.39&units=metric&appid=50311b86f032a40ec6eb630472f728a6";
     $clima = file_get_contents($url);
     $content = json_decode($clima);
+    $lat = 23.77;
+    $lon = 90.39;
 }
 
 else {
